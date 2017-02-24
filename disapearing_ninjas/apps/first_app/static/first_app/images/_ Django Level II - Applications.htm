@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://learn.codingdojo.com/m/7/3834/26234 -->
+<html class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title> | Django Level II - Applications</title>
+    <link href="http://learn.codingdojo.com/assets/black_ninja-db2fe4f1051012ab89c235cc9bf3cd5a.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="./_ Django Level II - Applications_files/chapter_modules_layout-612983b3f6cc68dadcd3eb8e2810e6db.css" media="all" rel="stylesheet">
+    <link href="./_ Django Level II - Applications_files/modules_layout-d84f0989f3acdff02914b47f05c2b0ea.css" media="all" rel="stylesheet">
+
+
+    <script src="./_ Django Level II - Applications_files/chapter_modules_scripts-ca996c2a26beef28c62fe7f749a72e4f.js"></script><style></style><script src="./_ Django Level II - Applications_files/clipboard.min.js"></script>
+    <script src="./_ Django Level II - Applications_files/modules_scripts-af69eeb0722c216934f6d474a3de13e9.js"></script>
+
+    <meta content="authenticity_token" name="csrf-param">
+<meta content="QlISedBhwfnmXiRoIh+G48dXGJZSxIbpe5kNeM2kZ34=" name="csrf-token">
+    <script>
+//<![CDATA[
+var AUTH_TOKEN = 'QlISedBhwfnmXiRoIh+G48dXGJZSxIbpe5kNeM2kZ34=';
+//]]>
+</script>
+    
+      <script src="./_ Django Level II - Applications_files/socket.io.js" type="text/javascript"></script>
+
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+<body>
+<input type="checkbox" id="activate_menu_checkbox" class="hidden" checked="checked">
+
+
+<div id="menu_button">
+		<label for="activate_menu_checkbox" class="glyphicon glyphicon-menu-hamburger"></label>
+		<a href="http://learn.codingdojo.com/dashboard#tracks_container" class="button_text unload_link">
+			<div class="track_button">
+				Back to Tracks
+			</div>
+		</a>
+	<!-- <label label for="activate_menu_checkbox" class="glyphicon menu_indicator"></label> -->
+</div>  
+
+<div class="hidden_chapter_title"><a class="chapter_title" href="javascript:void(0)">
+					<h3><span class="chapter-title">Django Level II - Applications</span></h3>
+					<!--  -->
+					
+						<div class="progress_container">
+							<span class="chapter_item_progress">
+								27%
+							</span>
+						</div>
+				</a></div>
+<div id="sidebar" class="nano " style="height: 100px;">
+	
+	<ul id="chapter_list" class="nano-content  chapter-list" data-course-id="1276" tabindex="0">
+			<li class="">
+
+
+
+				<a class="chapter_title unload_link" href="http://learn.codingdojo.com/m/7/3832">
+					<h3><span class="chapter-title">Django Level I - Introduction</span></h3>
+					<!--  -->
+					
+						<div class="progress_container">
+							<span class="chapter_item_progress">
+								95%
+							</span>
+						</div>
+				</a>
+				<ul class="tab_list  module-list" id="module_list_3832" data-chapter-id="3834">
+
+
+
+				</ul>
+			</li>
+			<li class="active">
+
+
+
+				<a class="chapter_title unload_link" href="http://learn.codingdojo.com/m/7/3834">
+					<h3><span class="chapter-title">Django Level II - Applications</span></h3>
+					<!--  -->
+					
+						<div class="progress_container">
+							<span class="chapter_item_progress">
+								27%
+							</span>
+						</div>
+				</a>
+				<ul class="tab_list  module-list" id="module_list_3834" data-chapter-id="3834">
+
+
+
+
+							<li class="text completed_tab" data-module-id="26224">
+									<a class="tab_title unload_link" href="http://learn.codingdojo.com/m/7/3834/26224">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26224">
+										<h4>Models in Django</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="text completed_tab" data-module-id="26225">
+									<a class="tab_title unload_link" href="http://learn.codingdojo.com/m/7/3834/26225">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26225">
+										<h4>Common Model Types</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="text completed_tab" data-module-id="26227">
+									<a class="tab_title unload_link" href="http://learn.codingdojo.com/m/7/3834/26227">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26227">
+										<h4>Models compared to Erds</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="to_do completed_tab" data-module-id="26228">
+									<a class="tab_title unload_link" href="http://learn.codingdojo.com/m/7/3834/26228">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26228">
+										<h4>Wall ERD</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="quiz completed_tab" data-module-id="26230">
+									<a class="tab_title unload_link" href="http://learn.codingdojo.com/m/7/3834/26230">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26230">
+										<h4>Quiz I</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="text completed_tab" data-module-id="26232">
+									<a class="tab_title unload_link" href="http://learn.codingdojo.com/m/7/3834/26232">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26232">
+										<h4>Django Wall Solution</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="text completed_tab" data-module-id="26233">
+									<a class="tab_title unload_link" href="http://learn.codingdojo.com/m/7/3834/26233">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26233">
+										<h4>Making Queries Intro</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="text  current" data-module-id="26234">
+									<a class="tab_title unload_link" href="http://learn.codingdojo.com/m/7/3834/26234">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26234">
+										<h4>ORM Queries</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="to_do " data-module-id="27193">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_27193">
+										<h4>Sports ORM</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="to_do " data-module-id="26235">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26235">
+										<h4>Courses</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="text " data-module-id="26237">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26237">
+										<h4>Model Validations</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="to_do " data-module-id="26236">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26236">
+										<h4>Email Validation</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="quiz " data-module-id="26238">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26238">
+										<h4>Quiz II</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="text " data-module-id="26239">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26239">
+										<h4>Bcrypt</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="to_do " data-module-id="26240">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26240">
+										<h4>Login and Registration</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="text " data-module-id="31267">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_31267">
+										<h4>Foreign Keys</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="text " data-module-id="31268">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_31268">
+										<h4>Many to Many Relationships</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="to_do " data-module-id="31269">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_31269">
+										<h4>Sports ORM II</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="text " data-module-id="26241">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26241">
+										<h4>Named Routes</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="text " data-module-id="26242">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26242">
+										<h4>Multiple Apps</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="to_do " data-module-id="26243">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26243">
+										<h4>Multiple Apps</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="to_do " data-module-id="26338">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26338">
+										<h4>Semi-Restful Routes</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="to_do " data-module-id="31270">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_31270">
+										<h4>Dojo Secrets</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="to_do " data-module-id="26340">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26340">
+										<h4>Belt Reviewer</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+
+							<li class="to_do " data-module-id="26339">
+									<a class="tab_title unload_link" href="javascript:void(0)">
+									<div class="tab_label"><span class="tab_icon"></span></div>
+									<span class="tab_details" id="quiz_id_26339">
+										<h4>User Dashboard</h4> <!-- % if contents["type"] == QUIZ_MODULE % -->
+									</span>
+								</a>
+							</li>
+				</ul>
+			</li>
+			<li class="">
+
+
+
+				<a class="chapter_title unload_link" href="http://learn.codingdojo.com/m/7/3843">
+					<h3><span class="chapter-title">Django Extras</span></h3>
+					<!--  -->
+					
+						<div class="progress_container">
+							<span class="chapter_item_progress">
+								0%
+							</span>
+						</div>
+				</a>
+				<ul class="tab_list  module-list" id="module_list_3843" data-chapter-id="3834">
+
+
+
+				</ul>
+			</li>
+			<li class="">
+
+
+
+				<a class="chapter_title unload_link" href="http://learn.codingdojo.com/m/7/3844">
+					<h3><span class="chapter-title">Django Level III - Advanced</span></h3>
+					<!--  -->
+					
+						<div class="progress_container">
+							<span class="chapter_item_progress">
+								0%
+							</span>
+						</div>
+				</a>
+				<ul class="tab_list  module-list" id="module_list_3844" data-chapter-id="3834">
+
+
+
+				</ul>
+			</li>
+	</ul>
+<div class="nano-pane" style="display: block;"><div class="nano-slider" style="height: 766px; transform: translate(0px, 214px);"></div></div></div>
+<nav id="main_navigation">
+	<div id="navbar">
+		<ul id="breadcrumbs" class="left_align">
+			<li>Python / Django</li>
+			<li>Django v2</li>
+			<li id="chapter_title">Django Level II - Applications</li>
+			<li class="module_title">Queries Continued, the ORM</li>
+		</ul>
+		<div id="profile_block" class="pull-right">
+			<img src="./_ Django Level II - Applications_files/profile_pic.png" alt="Ion" class="profile_image">
+			<div class="dropdown">
+				<a href="http://learn.codingdojo.com/m/7/3834/26234#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					<div id="user_name_block">
+						<div>
+							<span class="decor_text">Hello,  </span> 
+							<span class="user_name">Ion G</span>
+						</div>
+					</div>
+					<span class="caret"></span>
+				</a>
+				<div class="dropdown-menu dropdown-menu-right" role="menu">
+					<div class="dropdown_content">	
+						<ul>
+							<li>
+								<a href="http://learn.codingdojo.com/dashboard">Dashboard</a>
+								<span class="glyphicon glyphicon-home pull-right" aria-hidden="true"></span>
+							</li>
+							<li>
+								<a href="http://learn.codingdojo.com/dashboard#tracks_container">Tracks</a>
+								<span class="glyphicon glyphicon-book pull-right" aria-hidden="true"></span>
+							</li>
+							<li data-target="#my_account_modal" data-toggle="modal">
+								<a href="http://learn.codingdojo.com/m/7/3834/26234#" class="view_user_info">My Account</a>
+								<span class="glyphicon glyphicon-user pull-right" aria-hidden="true"></span>
+							</li>
+							<li class="dropdown_buttons">
+								<a id="signout_button" class="btn btn-primary btn-lg btn-block unload_link" href="http://learn.codingdojo.com/signout">Log Out</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<section id="main_content">
+    	<div id="content_navigation">
+
+		<div id="return_button" class="right_align">
+			<a href="http://learn.codingdojo.com/dashboard" class="unload_link">
+				<span class="glyphicon glyphicon-th-large"></span><span>Home</span> 
+			</a>
+			<input type="hidden" name="authenticity_token" value="QlISedBhwfnmXiRoIh+G48dXGJZSxIbpe5kNeM2kZ34=" current-module="26234"> 
+		</div>
+	</div>
+	<div id="section_content">
+	<div id="assignment-metadata"></div>
+		<div class="content_block">
+			<div id="module_container">
+				<div class="module_content module_content_block">
+
+								<div class="module_description active_lesson active_lesson_with_video ">
+									
+            
+            <h1>Queries Continued</h1>
+<p>For this section, we'll be using the following model:</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python"><span class="token keyword">class</span> <span class="token class-name">User</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>
+  first_name <span class="token operator">=</span> models<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">25</span><span class="token punctuation">)</span>
+  last_name <span class="token operator">=</span> models<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">25</span><span class="token punctuation">)</span>
+  age <span class="token operator">=</span> models<span class="token punctuation">.</span>IntegerField<span class="token punctuation">(</span><span class="token punctuation">)</span>
+  created_at <span class="token operator">=</span> models<span class="token punctuation">.</span>DateTimeField<span class="token punctuation">(</span>auto_now_add<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+  updated_at <span class="token operator">=</span> models<span class="token punctuation">.</span>DateTimeField<span class="token punctuation">(</span>auto_now<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+  <span class="token keyword">def</span> <span class="token function">__str__</span><span class="token punctuation">(</span>self<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">return</span> self<span class="token punctuation">.</span>first_name <span class="token operator">+</span> <span class="token string">" "</span> <span class="token operator">+</span> self<span class="token punctuation">.</span>last_name
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p>What's the last part?  You might recognize it as a <em>magic method</em> from the OOP chapter.  Basically, it tells Python what to do when we try to convert a User object into a string, so that when I print these objects in the terminal, they'll show as <code>&lt;User: Firstname Lastname&gt;</code> instead of <code>&lt;User: User object&gt;</code>.  It's not required to make the code run, but it's pretty convenient!</p>
+<p>We currently have eight users in our database:</p>
+<table>
+  <tbody><tr>
+    <th>ID</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>John</td>
+    <td>Roberts</td>
+    <td>61</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Anthony</td>
+    <td>Kennedy</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Clarence</td>
+    <td>Thomas</td>
+    <td>68</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Ruth Bader</td>
+    <td>Ginsburg</td>
+    <td>83</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Stephen</td>
+    <td>Breyer</td>
+    <td>78</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Samuel</td>
+    <td>Alito</td>
+    <td>66</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Sonia</td>
+    <td>Sotomayor</td>
+    <td>62</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Elena</td>
+    <td>Kagan</td>
+    <td>56</td>
+  </tr>
+</tbody></table>
+<h3>Get</h3>
+<p>
+  <code>.get(field="val")</code> returns the one object that matches a given condition.  If we wanted the one user with last name "Thomas", we could say:
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>get<span class="token punctuation">(</span>last_name<span class="token operator">=</span><span class="token string">"Thomas"</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/get_query.png"></p>
+<p>
+  However, if the condition is true for more than item, or zero items, using <code>.get</code> will throw an error.  <strong>Only use <code>.get</code> if you know that there's only one matching item!</strong>  For this reason, this is a very good method to use with ID numbers.
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>get<span class="token punctuation">(</span>id<span class="token operator">=</span><span class="token number">6</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/get_query_2.png"></p>
+<h3>Filter</h3>
+<p>
+  <code>.filter(field="val"...)</code> returns all of the records where a given condition is true.  Here's how we'd find all of the "Thomas"es:
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>last_name<span class="token operator">=</span><span class="token string">"Thomas"</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/filter_query.png"></p>
+<p>
+  What's the difference between <code>.get</code> and <code>.filter</code> in this case?  Note that <code>.get</code> returns the object itself, while <code>.filter</code> returns a QuerySet (a special type of list that holds Django objects).  If we changed the code to look like this:
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>last_name<span class="token operator">=</span><span class="token string">"Thomas"</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">.</span>first_name<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p>
+  ...we would get an error, because a QuerySet doesn't have a <code>.first_name</code>:
+</p>
+<p><img src="./_ Django Level II - Applications_files/filter_error.png"></p>
+<p>
+  However, because it's returning a QuerySet and not an object, <code>.filter</code> has no problem if there's not exactly one matching record.
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>first_name<span class="token operator">=</span><span class="token string">"Horace"</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/filter_query_2.png"></p>
+<h3>Exclude</h3>
+<p>
+  <code>.exclude(field="val"...)</code> is the opposite of <code>.filter</code>: It returns all of the records where a given condition is false.  Here's every user NOT surnamed "Thomas":
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>exclude<span class="token punctuation">(</span>last_name<span class="token operator">=</span><span class="token string">"Thomas"</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/exclude_query.png"></p>
+<h3>Conditions</h3>
+<p>
+  You can do a more complicated search than just if a given field is equal to a given value.  Instead of just passing in the field name as a keyword argument to <code>.get</code>, <code>.filter</code>, or <code>.exclude</code>, you'd pass the field name__lookup type (that's a double underscore, also known as a "dunder" for people on-the-go).  For instance, to find users whose first name begins with "S":
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>first_name__startswith<span class="token operator">=</span><span class="token string">"S"</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/startswith_query.png"></p>
+<p>
+  That's not the only type of search you can do.  Here's everyone whose first name does not contain an "S":
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>exclude<span class="token punctuation">(</span>first_name__contains<span class="token operator">=</span><span class="token string">"S"</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/contains_query.png"></p>
+<p>
+  Every user older than 80:
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>age__gt<span class="token operator">=</span><span class="token number">80</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/gt_query.png"></p>
+<p>
+  Every user 80 or older (see the difference?):
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>age__gte<span class="token operator">=</span><span class="token number">80</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/gte_query.png"></p>
+<h3>Combining queries</h3>
+<p>Queries can be chained together:</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>last_name__contains<span class="token operator">=</span><span class="token string">"o"</span><span class="token punctuation">)</span><span class="token punctuation">.</span>exclude<span class="token punctuation">(</span>first_name__contains<span class="token operator">=</span><span class="token string">"o"</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/chaining_queries.png"></p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>age__lt<span class="token operator">=</span><span class="token number">70</span><span class="token punctuation">)</span><span class="token punctuation">.</span>filter<span class="token punctuation">(</span>first_name__startswith<span class="token operator">=</span><span class="token string">"S"</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/chaining_queries_2.png"></p>
+<p>
+  If it's the same type of query, instead of being chained you can multiple arguments to the function:
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>age__lt<span class="token operator">=</span><span class="token number">70</span><span class="token punctuation">,</span> first_name__startswith<span class="token operator">=</span><span class="token string">"S"</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/chaining_queries_2.png"></p>
+<p>
+  These are cases where the conditions are joined with AND, as in, all users younger than 70 AND whose first name starts with "S".  If you want OR, as in users who are younger than 70 OR whose first_name starts with "S", you can use <code>|</code> (the set union operator):
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">  user <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>age__lt<span class="token operator">=</span><span class="token number">70</span><span class="token punctuation">)</span><span class="token operator">|</span>User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>first_name__startswith<span class="token operator">=</span><span class="token string">"S"</span><span class="token punctuation">)</span>
+  <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"QUERY RESULT:"</span><span class="token punctuation">,</span> user<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/chaining_queries_3.png"></p>
+<h3>Displaying on Templates</h3>
+<p>
+  So far, we've only printed these objects to our terminal.  However, it's not difficult to display this information on a template.  How do we pass information from our view function into a template?  With a context dictionary!
+</p>
+<p>
+  <strong>...user_orm_example_project/apps/users/views.py</strong>
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python"><span class="token keyword">def</span> <span class="token function">index</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">:</span>
+  users <span class="token operator">=</span> User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>age__lt<span class="token operator">=</span><span class="token number">70</span><span class="token punctuation">)</span><span class="token operator">|</span>User<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>filter<span class="token punctuation">(</span>first_name__startswith<span class="token operator">=</span><span class="token string">"S"</span><span class="token punctuation">)</span>
+  context <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">"users"</span><span class="token punctuation">:</span> users<span class="token punctuation">}</span>
+  <span class="token keyword">return</span> render<span class="token punctuation">(</span>request<span class="token punctuation">,</span> <span class="token string">"users/index.html"</span><span class="token punctuation">,</span> context<span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p>
+  On the template, we can use a for-loop to go over this data.
+</p>
+<p>
+  <strong>...user_orm_example_project/apps/users/views.py</strong>
+</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python"><span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span>Users<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>table<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span>tr<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>th<span class="token operator">&gt;</span>ID<span class="token operator">&lt;</span><span class="token operator">/</span>th<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>th<span class="token operator">&gt;</span>First Name<span class="token operator">&lt;</span><span class="token operator">/</span>th<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>th<span class="token operator">&gt;</span>Last Name<span class="token operator">&lt;</span><span class="token operator">/</span>th<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span>th<span class="token operator">&gt;</span>Age<span class="token operator">&lt;</span><span class="token operator">/</span>th<span class="token operator">&gt;</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>tr<span class="token operator">&gt;</span>
+  <span class="token punctuation">{</span><span class="token operator">%</span> <span class="token keyword">for</span> user <span class="token keyword">in</span> users <span class="token operator">%</span><span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span>tr<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>td<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>user<span class="token punctuation">.</span>id<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>td<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>td<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>user<span class="token punctuation">.</span>first_name<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>td<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>td<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>user<span class="token punctuation">.</span>last_name<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>td<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>td<span class="token operator">&gt;</span><span class="token punctuation">{</span><span class="token punctuation">{</span>user<span class="token punctuation">.</span>age<span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>td<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>tr<span class="token operator">&gt;</span>
+  <span class="token punctuation">{</span><span class="token operator">%</span> endfor <span class="token operator">%</span><span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>table<span class="token operator">&gt;</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p><img src="./_ Django Level II - Applications_files/users_table.png"></p>
+<h3>Setting up the ORM</h3>
+<p>We <em>highly</em> recommend you work through the following guide in Django’s <a href="https://docs.djangoproject.com/en/1.9/topics/db/queries/">documentation for making queries</a>.</p>
+<iframe src="./_ Django Level II - Applications_files/175331071.html" width="640" height="400" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" kwframeid="1" class="vimeo_responsive" style="width: 938px; height: 586.25px;">
+</iframe>
+<p>Here are the code snippets from the video for reference.</p>
+<p>in models.py</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python"><span class="token keyword">class</span> <span class="token class-name">Blog</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>
+ title <span class="token operator">=</span> models<span class="token punctuation">.</span>CharField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">)</span>
+ blog <span class="token operator">=</span> models<span class="token punctuation">.</span>TextField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">1000</span><span class="token punctuation">)</span>
+ created_at <span class="token operator">=</span> models<span class="token punctuation">.</span>DateField<span class="token punctuation">(</span>auto_now_add<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+ updated_at <span class="token operator">=</span> models<span class="token punctuation">.</span>DateField<span class="token punctuation">(</span>auto_now<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token keyword">class</span> <span class="token class-name">Comment</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Model<span class="token punctuation">)</span><span class="token punctuation">:</span>
+ blog <span class="token operator">=</span> models<span class="token punctuation">.</span>ForeignKey<span class="token punctuation">(</span>Blog<span class="token punctuation">)</span>
+ comment <span class="token operator">=</span> models<span class="token punctuation">.</span>TextField<span class="token punctuation">(</span>max_length<span class="token operator">=</span><span class="token number">1000</span><span class="token punctuation">)</span>
+ created_at <span class="token operator">=</span> models<span class="token punctuation">.</span>DateField<span class="token punctuation">(</span>auto_now_add<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+ updated_at <span class="token operator">=</span> models<span class="token punctuation">.</span>DateField<span class="token punctuation">(</span>auto_now<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p>in index.html</p>
+<pre data-language="html" class=" code-toolbar  language-html"><code class="  language-html">{% for blog in blogs %}
+    {{blog.title}}
+    {{blog.blog}}
+{% endfor %}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>/blogs<span class="token punctuation">"</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>post<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    {% csrf_token %}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>title<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>blog<span class="token punctuation">"</span></span> <span class="token attr-name">rows</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>8<span class="token punctuation">"</span></span> <span class="token attr-name">cols</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>80<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>submit<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Enter Blog<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span></code></pre>
+<p>in urls.py</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python"><span class="token keyword">from</span> django<span class="token punctuation">.</span>conf<span class="token punctuation">.</span>urls <span class="token keyword">import</span> url
+<span class="token keyword">from</span> <span class="token punctuation">.</span> <span class="token keyword">import</span> views
+url_patterns <span class="token operator">=</span> <span class="token punctuation">[</span>
+ url<span class="token punctuation">(</span>r<span class="token string">'^$'</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>index<span class="token punctuation">,</span> name<span class="token operator">=</span><span class="token string">"index"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+ url<span class="token punctuation">(</span>r<span class="token string">'^blogs$'</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>blogs<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p>in views.py</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python"><span class="token keyword">from</span> django<span class="token punctuation">.</span>shortcuts <span class="token keyword">import</span> render<span class="token punctuation">,</span> redirect
+<span class="token keyword">from</span> <span class="token punctuation">.</span>models <span class="token keyword">import</span> Blog<span class="token punctuation">,</span> Comments
+<span class="token keyword">def</span> <span class="token function">index</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">:</span>
+ context <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token string">"blogs"</span><span class="token punctuation">:</span> Blog<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>all<span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token comment" spellcheck="true"># select * from Blog</span>
+ <span class="token punctuation">}</span>
+ <span class="token keyword">return</span> render<span class="token punctuation">(</span>request<span class="token punctuation">,</span> <span class="token string">'test_app/index.html'</span><span class="token punctuation">,</span> context<span class="token punctuation">)</span>
+<span class="token keyword">def</span> <span class="token function">blogs</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">:</span>
+ <span class="token comment" spellcheck="true"># using ORM</span>
+ Blog<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>create<span class="token punctuation">(</span>title<span class="token operator">=</span>request<span class="token punctuation">.</span>POST<span class="token punctuation">[</span><span class="token string">'title'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> blog<span class="token operator">=</span>request<span class="token punctuation">.</span>POST<span class="token punctuation">[</span><span class="token string">'blog'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+ <span class="token comment" spellcheck="true"># insert into Blog (title, blog, created_at, updated_at) values (title, blog, now(), now())</span>
+ <span class="token keyword">return</span> redirect<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<h3>Playing around with ORM</h3>
+<iframe src="./_ Django Level II - Applications_files/175341997.html" width="640" height="400" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="vimeo_responsive" kwframeid="1" style="width: 938px; height: 586.25px;">
+</iframe>
+<p>
+	All of the methods mentioned above go to the model and run a preset query from the model as defined by the ORM.&nbsp;<em>We intentionally left some info out about how to use the ORM.</em>
+</p>
+<p>
+	To become a self-sufficient developer, you need to get comfortable searching through the documentation and other resources. No pain (at least 20 minutes worth...), no gain!
+</p>
+<p>Here are the code snippets from the video for reference.</p>
+<p>in index.html</p>
+<pre>&lt;form action="/comments/{{blog.id}}" method="post"&gt;
+   {% csrf_token %}
+   &lt;textarea name="comment" rows="8" cols="80"&gt;&lt;/textarea&gt;
+   &lt;input type="submit" value="Enter Comment on This Blog"&gt;
+&lt;/form&gt;
+</pre>
+<p>in urls.py</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python">url<span class="token punctuation">(</span>r<span class="token string">'^comments/(?P\d+)$'</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>comments<span class="token punctuation">)</span><span class="token punctuation">,</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<p>in views.py</p>
+<pre data-language="python" class=" code-toolbar  language-python"><code class="  language-python"><span class="token keyword">def</span> <span class="token function">comments</span><span class="token punctuation">(</span>request<span class="token punctuation">,</span>id<span class="token punctuation">)</span><span class="token punctuation">:</span>
+  blog <span class="token operator">=</span> Blog<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>get<span class="token punctuation">(</span>id<span class="token operator">=</span>id<span class="token punctuation">)</span>
+  Comment<span class="token punctuation">.</span>objects<span class="token punctuation">.</span>create<span class="token punctuation">(</span>comment<span class="token operator">=</span>request<span class="token punctuation">.</span>POST<span class="token punctuation">[</span><span class="token string">'comment'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>blog<span class="token operator">=</span>blog<span class="token punctuation">)</span>
+  <span class="token keyword">return</span> redirect<span class="token punctuation">(</span><span class="token string">'/'</span><span class="token punctuation">)</span>
+</code><div class="toolbar"><div class="toolbar-item"><a>Copy</a></div></div></pre>
+<h3>Foreign Key Relationships in ORM</h3>
+<iframe src="./_ Django Level II - Applications_files/175342623.html" width="640" height="400" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" class="vimeo_responsive" kwframeid="2" style="width: 938px; height: 586.25px;">
+</iframe>
+<p>Here is the code snippet from the video for reference.</p>
+<p>in index.html</p>
+<pre>{% for comment in blog.comment_set.all() %}
+ {{comment.comment}}
+{% endfor %}
+</pre>
+<p>In the Django Tidbits Section, there are a few more pieces for ORM querying - feel free to check it out!</p>
+        
+        
+								</div>
+						
+
+					
+					
+					<!-- Modal Inactivity Notice Modal -->
+					<div class="modal fade info_modal" id="inactivity_notice_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+						<div class="modal-dialog" style="margin-top: 285px;">
+							<div class="modal-content">
+								<span class="hide_modal glyphicon glyphicon-remove" data-dismiss="modal" aria-label="Close"></span>
+								<div class="modal_header">
+									<h4>Inactivity Notice</h4>
+									<span class="glyphicon glyphicon-question-sign notice_tooltip pull-right" data-toggle="tooltip" data-placement="right" title="The system keeps track if you are active or not. We are saving the total time you spent on each topic for course improvement and student support purposes."></span>
+								</div>
+								<div class="modal_body">
+									<p>You have been idle for a long time, click the button below if you are you are still there.</p>
+									<a href="http://learn.codingdojo.com/m/7/3834/26234#" class="btn btn-primary continue_btn" data-dismiss="modal">CLICK TO CONTINUE</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end of Modal Inactivity Notice Modal -->
+
+					<!-- Log out from another device modal --> <!-- end of Log out from another device modal -->
+				</div>
+			</div>
+
+		</div>	
+
+		<div class="content_footer_block">
+			<a class="site_terms_link" data-target=".privacy_policy_modal" data-toggle="modal">Privacy Policy</a>
+			<div id="report_mistake_label_container" class="pull-right">
+				<span>To report a mistake, highlight the selection you believe is in error.</span>
+			</div>
+		</div>
+
+		<!-- cts warning modal -->
+		<div class="modal fade info_modal cts_warning_modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog" style="margin-top: 285px;">
+				<div class="modal-content">
+					<span class="hide_modal glyphicon glyphicon-remove" data-dismiss="modal" aria-label="Close"></span>
+					<form action="http://learn.codingdojo.com/m/7/3834/26234" id="cts_warning_form">
+						<div class="modal_header"><h4>Confirm Action</h4></div>
+						<div class="modal_body">
+							<p>Only <span class="time_passed"></span> had passed since you started this assignment. Are you sure you want to view the Answersheet? The more you code on your own, the more you become a self-sufficient software engineer</p>
+							<a href="javascript:void(0);" class="btn btn-default cancel_btn" data-dismiss="modal">CANCEL</a>
+							<!-- <a href="javascript:void(0);" class="btn btn-primary submit_btn continue_btn" data-dismiss="modal">CONTINUE</a> -->
+							<input type="submit" class="btn btn-primary submit_btn continue_btn" id="view_answersheets" data-dismiss="modal" value="CONTINUE">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div> 
+
+	<!-- Reported a mistake popover -->
+	<a href="http://learn.codingdojo.com/m/7/3834/26234#" class="hidden" id="report_mistake_popover" data-placement="bottom"></a>
+	<div class="hidden" id="report_mistake_popover_clone">
+		<span class="report_mistake_label">Report a mistake</span>
+		<form id="report_mistake_container" action="http://learn.codingdojo.com/report_mistake">
+			<h5>Report a mistake</h5>
+			<input type="hidden" name="chapter_module_id" value="26234">
+			<input type="hidden" name="authenticity_token" value="QlISedBhwfnmXiRoIh+G48dXGJZSxIbpe5kNeM2kZ34=">
+			<input type="hidden" name="course_id" value="1276">
+			<input type="hidden" name="track_id" value="7">
+			<textarea name="report_mistake_textarea" id="report_mistake_textarea" rows="5" placeholder="Tell us what&#39;s wrong"></textarea>
+			<input type="submit" value="SUBMIT" class="btn btn-primary btn-block">
+		</form>
+	</div>
+	<!-- END of Reported a mistake popover -->
+
+	<ul class="create_message_container">
+		<!-- Append the Chat here -->
+		<li class="chat_counter hidden"> 
+			<span class="glyphicon glyphicon-comment"></span> 
+			<span id="number_of_hidden_chat"></span>
+		</li>
+	</ul>
+	<div id="content_footer" style="width: 1036px;">	
+		<div class="prev_button">  
+			<a href="http://learn.codingdojo.com/m/7/3834/26233" class="btn btn-primary previous_button_link unload_link">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				Previous
+			</a>
+			<!-- <span class="glyphicon glyphicon-chevron-left"></span>
+			<a href="/m/7/3834/26233" class="previous_button_link unload_link">Prev</a> -->
+		</div>
+		<a href="javascript:void(0);" class="back_button">Back to Track</a>
+		<div class="next_button pull-right">
+				<a href="http://learn.codingdojo.com/m/7/3834/27193" class="btn btn-primary next_button_link unload_link">
+					Next
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+				<!-- <a href="/m/7/3834/27193" class="next_button_link unload_link">Next</a> -->
+				<a href="http://learn.codingdojo.com/m/7/3834/27193" class="real_next_link hidden"></a>
+				<!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
+		</div>
+
+		<input type="hidden" id="current_module_id" name="authenticity_token" value="QlISedBhwfnmXiRoIh+G48dXGJZSxIbpe5kNeM2kZ34=" current-module="26234" course-percentage="35"> 
+		<div id="linkage" data-target="#inactivity_notice_modal" data-toggle="modal" style="display:none;"></div>
+	</div>
+	<!-- My Account Modal -->
+	  <div id="my_account_modal" tabindex="-1" role="dialog" aria-hidden="true" class="modal fade">
+	    <div class="modal-dialog modal-lg">
+	      <div class="modal-content">
+	      	<span class="hide_modal glyphicon glyphicon-remove" data-dismiss="modal" aria-label="Close"></span>
+	        <div class="user_information_block">
+	          <form action="http://learn.codingdojo.com/upload_profile_pic" class="profile_pic" enctype="multipart/form-data" method="post">
+	            <input type="hidden" name="authenticity_token" value="QlISedBhwfnmXiRoIh+G48dXGJZSxIbpe5kNeM2kZ34=">
+	            <input id="browse_pic" class="browse_profile_pic hidden" type="file">
+	              <label for="browse_pic">
+	                <span class="profile_preview">
+	                  <img src="./_ Django Level II - Applications_files/profile_pic.png" alt="Ion"> 
+	              </span>
+	              </label>
+	          </form>
+	          <ul class="list-unstyled">
+	            <li>Name: Ion Goiman</li>
+	            <li>Email: goiman0992@gmail.com</li>
+	            <li>Password: <span class="password">************</span> <span class="change_password">change password</span></li>
+	            <li>Program Type: Onsite Flex</li>
+	            <li>Location: Seattle</li>
+	            <li>Start Date: January 23, 2017</li>
+	          </ul>
+	        </div>
+	        <form class="change_password_block">
+	          <ul class="list-unstyled">
+	            <li>
+	              <span>Old Password:</span>
+	              <input type="password" class="old_password_input match">
+	            </li>
+	            <li>
+	              <span>New Password:</span>
+	              <input type="password" class="new_password_input match">
+	            </li>
+	            <li>
+	              <span>Confirm New Password:</span>
+	              <input type="password" class="confirm_new_password_input match">
+	            </li>
+	            <li>
+	              <button type="button" class="btn btn-primary save_new_password_button">SAVE</button>
+	            </li>
+	          </ul>
+	        </form>
+	        <p class="modal-messages"></p>
+	      </div>
+	    </div>
+	  </div>    
+	<!-- end of My Account Modal  -->
+
+	<!-- Privacy Policy Modal -->
+	<div class="modal fade privacy_policy_modal" tabindex="-1" role="dialog" data-keyboard="">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<span class="hide_modal glyphicon glyphicon-remove" data-dismiss="modal" aria-label="Close"></span>
+				
+				<div id="terms_of_service">
+					<div class="greetings">
+						<p id="thank_you_greeting">Thank you for taking the time to learn about our legal policies.</p>
+						<p id="greeting">Your privacy is important to us.</p>
+					</div>
+					<div class="links">
+						<p id="privacy_policy">
+							<a href="http://www.codingdojo.com/files/Privacy_Policy.pdf" target="_blank">Privacy Policy</a>
+						</p>
+						<p id="acceptable_use">
+							<a href="http://www.codingdojo.com/files/Acceptable_Use_Policy.pdf" target="_blank">Acceptable Use</a>
+						</p>
+						<p id="site_terms">
+							<a href="http://www.codingdojo.com/files/Site_Terms.pdf" target="_blank">Site Terms</a>
+						</p>
+					</div>
+					<a href="javascript:void(0)" class="btn btn-primary" id="close_button" data-dismiss="modal">CLOSE</a>
+				</div>
+			</div>
+		</div>
+	</div> 
+
+</section>
+
+<!-- Clone Template -->
+<div id="clone_template_container" class="hidden">
+	<ul id="chat_item">
+		<li data-chat-id="" data-module-id="" class="active_chat chat"> 
+		    <input type="checkbox" class="chat_checkbox" id="" checked="checked"> 
+		    <div class="chat_container"> 	
+		        <div class="chat_header"> 
+		            <label for="chat_checkbox_" class="hide_chat"> 
+		                <span class="glyphicon glyphicon-comment"></span> 
+		                <span class="name"></span> 
+		                <span class="glyphicon glyphicon-triangle-bottom"></span> 
+		                <span class="glyphicon glyphicon-remove remove_chat"></span> 
+		            </label> 
+		        </div>  
+		        <div class="chat_body"> 
+		            <div class="settings"> 
+		                <span class="start_this_call glyphicon glyphicon-facetime-video" title="Video call. Click to start a video call."></span>
+		            </div> 
+		            <div class="conversation_container nano"> 
+		                <ul class="nano-content" tabindex="0"> 
+		                </ul> 
+		            <div class="nano-pane" style="display: none;"><div class="nano-slider" style="transform: translate(0px, 0px);"></div></div></div> 
+		            <div class="hidden_div"></div> 
+		        </div> 
+		        <form class="input_container"> 
+		            <textarea name="" class="form-control enter_message" placeholder="Send a message"></textarea> 
+		            <input type="hidden"> 
+		        </form> 
+		    </div> 
+		</li>
+	</ul>
+
+	<div id="video_walk_through">
+		<a class="how_we_did_video"> 
+	    	<div class="how_we_did_block">
+	        	<div id="video_logo"><img src="./_ Django Level II - Applications_files/play_button.png" alt=""></div> 
+	        	<div class="how_we_did_info"> 
+	            	<span class="title">Wanna see how we did it?</span> 
+	            	<span class="video_time_to_unlock"></span> 
+	        	</div> 
+	    	</div> 
+	     </a>
+	</div>
+
+	<ul id="question_clone">
+		<li class="question"> 
+            <img src="http://learn.codingdojo.com/m/7/3834/26234" alt="profile_picture" class="profile_image"> 
+            <div class="right_question_content"> 
+                <div class="question_block">
+                    <span class="name"></span> 
+                    <span class="date"></span> 
+                    <span class="glyphicon glyphicon-remove pull-right remove_question" id=""></span> 
+                    <p class="main_question"></p> 
+                    <a href="http://learn.codingdojo.com/m/7/3834/26234#" class="add_question_answer" id="">Add answer</a> 
+                    <span class="middle_dot">·</span>
+                    <a href="http://learn.codingdojo.com/m/7/3834/26234#" class="number_of_vote" data-value=""></a> 
+                    <button id="" class="vote_up vote_button" value="1"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></button> 
+                    <button id="" class="vote_down vote_button" value="-1"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></button> 
+                </div>
+                <form class="list-unstyled create_answer_container" id="post_answer" action="http://learn.codingdojo.com/helps/post_answer" method="post"> 
+                    <img src="http://learn.codingdojo.com/m/7/3834/26234" alt="profile_picture" class="profile_image"> 
+                    <div class="create_answer_form"> 
+                        <input type="hidden" name="authenticity_token" value="QlISedBhwfnmXiRoIh+G48dXGJZSxIbpe5kNeM2kZ34=">
+                        <input class="answer_id_input" type="hidden" name="answer[question_id]" value="">
+                        <textarea class="form-control answer_value" name="answer[text_answer]" rows="2" placeholder=""></textarea>
+                        <div class="post_answer_buttons">
+                            <button class="btn btn-default cancel_post_answer">CANCEL</button>
+                            <button class="btn btn-primary post_reply_answer">ANSWER</button>
+                        </div>
+                    </div>
+                </form>
+                <ul class="list-unstyled answers_container">
+                </ul> 
+            </div>
+        </li>
+	</ul>
+
+	<ul id="answer_clone">
+		<li> 
+		    <div class="left_answers_block"> 
+		        <img src="http://learn.codingdojo.com/m/7/3834/26234" alt="profile_picture" class="profile_image"> 
+		    </div> 
+		    <div class="right_answers_block"> 
+		        <span class="name"></span> 
+		        <span class="date"></span> 
+		        <span class="glyphicon glyphicon-remove pull-right remove_answer" id=""></span> 
+		        <p></p> 
+		        <a href="http://learn.codingdojo.com/m/7/3834/26234#" class="number_of_vote" data-value=""></a> 
+		        <button id="" class="vote_up vote_button answer_vote" value="1"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></button> 
+		        <button id="" class="vote_down vote_button answer_vote" value="-1"><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></button> 
+		    </div> 
+		</li>
+	</ul>
+</div>
+
+<!-- Html5 Videos speed Clone -->
+<div class="hidden html5_video_speed_clone">
+	<div class="btn-group" role="group" aria-label="..."> 
+		<button type="button" class="btn btn-default reduce_video_speed"> <span class="glyphicon glyphicon-minus"></span> </button> 
+		<button type="button" class="btn btn-default current_speed">1.0</button>
+		<button type="button" class="btn btn-default add_video_speed"> <span class="glyphicon glyphicon-plus"></span> </button>
+	</div>
+</div>
+
+<div id="page_info">
+	<input type="hidden" value="http://learn.codingdojo.com/m/7/3834/26234">
+	<input type="hidden" value="7">
+	<input type="hidden" value="1276">
+	<input type="hidden" value="3834">
+	<input type="hidden" id="module_id_current" value="26234">
+	<input type="hidden" value="24.16.142.174">
+	<input type="hidden" value="14376" id="page_current_user" user="Ion Goiman">
+</div>
+
+
+
+
+
+<div class="quiz_result_details_block" id="quiz_result_details" style="display: none;">
+	<div class="quiz_result_user_image">
+		<img src="./_ Django Level II - Applications_files/profile_pic.png" alt="Ion" class="profile_image">
+	</div>
+	<div class="quiz_result_info">
+		<h3 id="user_name"></h3>
+		<p id="quiz_date"></p>
+	</div>
+	<div class="clear"></div>
+	<p class="quiz_result_score"></p>
+	<div class="quiz_result_content">
+	</div>
+</div>
+		
+
+
+<script>
+	/* for showing of checklist details in chapter module page */
+
+    var checklist_details = JSON.parse('null');
+	
+    if(checklist_details != null){
+
+        if(Object.keys(checklist_details).length > 0){
+            var days = ["", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+            var level = ["", "Basic", "Intermediate", "Advanced", "Hacker"];
+            var details_to_append = '<ul class="list-inline information_checklist_list">';
+
+            $.each(checklist_details, function(index, value){
+                switch(index){
+                    case 'is_optional':
+                        status = (value == 1) ? "Optional" : "Mandatory";
+                        details_to_append += '<li>'+status+'</li>';
+                        break;
+                    case 'day':
+                        if(value && checklist_details.week != 0){
+                            details_to_append += "<li>Deadline: "+days[value]+" of Week "+checklist_details.week+"</li>"
+                        }
+                        break;
+                    case 'difficulty_level':
+                        if(value != 0 && value != null)
+                        details_to_append += "<li>Difficulty Level: "+level[value]+"</li>";
+                        break;
+                    case 'estimated_time':
+                        if(value != "" && value != null){
+                            details_to_append += "<li>Estimated Time: "+value+"</li>";
+                        }
+                        break;
+                }
+            });
+
+            details_to_append += "</ul>";  
+			$('#assignment-metadata').html(details_to_append)
+        }
+    }
+</script>
+<script type="text/javascript" src="http://learn.codingdojo.com/m/7/3834/26234"></script>
+
+
+
+
+	<!-- Modals -->
+	<!-- Delete Chapter Modal -->
+	<div class="modal fade info_modal delete_chapter_modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" style="margin-top: 285px;">
+			<div class="modal-content">
+				<input type="hidden" name="chapter_id" value="">
+
+				<span class="hide_modal glyphicon glyphicon-remove" data-dismiss="modal" aria-label="Close"></span>
+				<div class="modal_header"><h4>Delete Chapter?</h4></div>
+				<div class="modal_body">
+					<p>Chapter will be permanently deleted. Are you sure?</p>
+					<a href="http://learn.codingdojo.com/m/7/3834/26234#" class="btn btn-default cancel_btn" data-dismiss="modal">CANCEL</a>
+					<a href="http://learn.codingdojo.com/m/7/3834/26234#" class="btn btn-primary confirm_delete_chapter" data-dismiss="modal">DELETE CHAPTER</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Delete Module Modal -->
+	<div class="modal fade info_modal delete_module_modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" style="margin-top: 285px;">
+			<div class="modal-content">
+				<input type="hidden" name="module_id" value="">
+
+				<span class="hide_modal glyphicon glyphicon-remove" data-dismiss="modal" aria-label="Close"></span>
+				<div class="modal_header"><h4>Delete Module?</h4></div>
+				<div class="modal_body">
+					<p>Module will be permanently deleted. Are you sure?</p>
+					<a href="http://learn.codingdojo.com/m/7/3834/26234#" class="btn btn-default cancel_btn" data-dismiss="modal">CANCEL</a>
+					<a href="http://learn.codingdojo.com/m/7/3834/26234#" class="btn btn-primary confirm_delete_module" data-dismiss="modal">DELETE MODULE</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- chapter_module_modal -->
+	<div class="modal fade info_modal chapter_module_modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" style="margin-top: 285px;">
+			<div class="modal-content">
+				<input type="hidden" name="chapter_id" value="">
+
+				<span class="hide_modal glyphicon glyphicon-remove" data-dismiss="modal" aria-label="Close"></span>
+				<div class="modal_header"><h4>New Chapter</h4></div>
+				<div class="modal_body">
+					<input id="" type="text" placeholder="Chapter Title" value="">
+					<a href="http://learn.codingdojo.com/m/7/3834/26234#" class="btn btn-primary">SAVE</a>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+    <script type="text/javascript">
+        var io = io.connect('https://learn.codingdojo.com:8787', {force_connection: true, path: '/app1socket'});
+        var pair_hangout = false;
+        var admin_as_student = "";
+
+        io.on("error", function(){
+            console.log('Failed connecting to node js server.');
+        });
+
+        if(admin_as_student != "true"){
+            io.on('server:logout', function(){
+                io.emit("student:signout");
+
+                $.ajax({
+                    url: "/before_signout/",
+                    type: "get",
+                    success: function(values) {
+                        if(values.status){
+                            window.location.href = "/signout";
+                        }
+                    }
+                });
+            });
+        }
+
+        $(document).on('ready page:load', function (){
+            io.on('need_signin', function(socket_data) {
+            	io.emit('student:signin', {user_information: {"id":14376,"first_name":"Ion","last_name":"Goiman","email":"goiman0992@gmail.com","image_url":null,"created_at":"2016-11-07T18:37:36.000Z","user_level":1,"applicant_id":21925,"is_automated":null,"address":null,"bootcamp_type":3,"bootcamp_date":"January 23, 2017","bootcamp_location":"1","updated_at":"2017-02-18T00:04:40.754Z","last_visited_url":"/m/7/3834/26234","group_ids":[158]}, ip_address: $("#page_info input:nth-child(6)").val(), device: navigator.userAgent}, function(data){
+            		new_track();
+            	});
+            });
+
+            if(admin_as_student != "true"){
+                io.on('server:warning_duplicate_user', function(data){
+                    console.log("warning!!");
+                    io.emit("track:logout_duplicate", data);
+                });
+            }
+
+            function new_track(){
+            	io.emit('track:new', {
+    	        	url: $("#page_info input:nth-child(1)").val(),
+    	        	track_id: $("#page_info input:nth-child(2)").val(),
+    	        	course_id: $("#page_info input:nth-child(3)").val(),
+    	        	chapter_id: $("#page_info input:nth-child(4)").val(),
+    	        	module_id: $("#page_info input:nth-child(5)").val(),
+    	        	ip_address: $("#page_info input:nth-child(6)").val()
+    	        });
+            }
+
+            new_track();
+
+            $("#logout_button").click(function(e){
+                e.preventDefault();
+                e.stopPropagation();
+                io.emit("student:signout");
+                window.location.href = "/signout";
+            });
+
+            io.on("new_chat_message", function(new_message){
+                display_sent_chat_message(new_message);
+            });
+
+            io.on("send_new_message", function(message){
+                display_received_chat_message(message);
+            });
+
+            io.on('make_user_unavailable', function(call_information){
+                make_user_unavailable(call_information);
+            });
+
+            io.on('make_user_available', function(user){
+                make_user_available(user);
+            });
+
+            io.on("invite_student", function(call_information){
+                display_call_request(call_information);
+            });
+        });
+    </script> 
+<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
